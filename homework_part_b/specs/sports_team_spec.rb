@@ -21,4 +21,10 @@ class TestSportsTeam < MiniTest::Test
         assert_equal("Mad Billy", team.coach())
     end
 
+    def test_can_change_coach
+        team = SportsTeam.new("Lochend Academicals", [], "Mad Billy")
+        team.set_coach("Cyril Sneer")
+        assert_equal("Cyril Sneer", team.coach())
+    end
+
 end
