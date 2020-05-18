@@ -25,4 +25,9 @@ class TestStudent < MiniTest::Test
         student.set_cohort("G316")
         assert_equal("G316", student.cohort())
     end
+
+    def test_student_can_say_something
+        student = Student.new("Craig", "E40")
+        assert_equal("Can you hear me? Am I muted?", student.say_something())
+    end
 end

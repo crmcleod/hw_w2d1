@@ -3,6 +3,7 @@ class Student
     def initialize(name, cohort)
         @name = name
         @cohort = cohort
+
     end
 
     def name
@@ -13,6 +14,10 @@ class Student
         return @cohort
     end
 
+    def say_something
+        return "Can you hear me? Am I muted?"
+    end
+
     def set_name(name)
         @name = name
     end
@@ -20,5 +25,6 @@ class Student
     def set_cohort(cohort)
         @cohort = cohort
     end
+
 
 end
