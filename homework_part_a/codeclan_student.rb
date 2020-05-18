@@ -1,9 +1,9 @@
 class Student
 
-    def initialize(name, cohort, favourite_language)
+    def initialize(name, cohort)
         @name = name
         @cohort = cohort
-        @favourite_language = favourite_language
+        # @favourite_language = favourite_language
 
     end
 
@@ -15,12 +15,12 @@ class Student
         return @cohort
     end
 
-    def say_favourite_language
-        return "I love #{@favourite_language}"
+    def say_favourite_language(language)
+        return "I love #{language}"
     end
 
-    def say_something
-        return "Can you hear me? Am I muted?"
+    def student_say_something(say_something)
+        return say_something
     end
 
     def set_name(name)
