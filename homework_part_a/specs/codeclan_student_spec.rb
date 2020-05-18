@@ -20,4 +20,9 @@ class TestStudent < MiniTest::Test
         assert_equal("Farnsworth", student.name())
     end
 
+    def test_can_update_student_cohort
+        student = Student.new("Farnsworth", "E123")
+        student.set_cohort("G316")
+        assert_equal("G316", student.cohort())
+    end
 end
