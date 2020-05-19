@@ -33,11 +33,10 @@ class TestSportsTeam < MiniTest::Test
         assert_equal(["Splinter"], team.players())
     end
 
-    # def test_check_if_player_in_array
-    #     team = SportsTeam.new("Oxgang Wednesday", ["Fred"], "Tommy Pickles", 0)
-    #     team.find_player("Fred")
-    #     assert_equal(true, team.players())
-    # end
+    def test_check_if_player_in_array
+        team = SportsTeam.new("Leith United", ["Fred", "Barney"], "Scooby doo", 0)
+        assert_equal("Fred", team.find_player("Fred"))
+    end
 
     def test_adds_points_for_wins
         team = SportsTeam.new("Morningside FC", [], "Little My", 0)
